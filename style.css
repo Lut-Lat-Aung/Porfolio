@@ -1,0 +1,52 @@
+.white {
+    color: white;
+    font-size: xx-large;
+ }
+ .red{
+    color: red;
+    font-size: medium;
+ }
+
+ .green{
+    color: aquamarine;
+    font-size: x-large;
+
+ }
+.stroke{
+    color: white;
+    stroke: red;
+    stroke-width: 50%;
+
+}
+.fontsize{
+    color: antiquewhite;
+    font-size: xx-large;
+
+}
+.button1 {
+    color: white;
+    background-color: rgb(13, 64, 64);
+    border-color: black;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.button {
+    
+    color: white;
+    background-color: rgb(13, 64, 64);
+    border-color: black;
+    padding: 20px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
