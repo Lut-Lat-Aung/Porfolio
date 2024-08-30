@@ -1,0 +1,207 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.octocat{
+  float: right;
+  margin: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.header nav {
+  margin-top: 10px;
+  
+}
+
+.header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 50px 20px;
+  margin: 0 auto;
+}
+
+.about, .projects, .experience, .skills, .contact {
+  background-color: white;
+  margin: 20px 0;
+  max-width: 1200px; 
+  /* Limit the width of content for larger screens */
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  justify-content: center; /* Center items within the container */
+}
+
+.project-item {
+  background-color: #ddd;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 30%;
+  min-width: 250px; /* Ensure items don’t get too small */
+  flex-grow: 1; /* Allow items to grow if there’s space */
+}
+
+.skill-bar {
+  background-color: #eee;
+  margin: 10px auto;
+  border-radius: 5px;
+  width: 80%; /* Limit width for large screens */
+}
+
+.skill {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px; /* Limit form width */
+  margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+  width: 100%; /* Full width on smaller screens */
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.contact button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #555;
+}
+
+/* Media queries for responsive design */
+
+/* For tablets and larger screens */
+@media (min-width: 768px) {
+  .project-item {
+    width: 45%; /* Two items per row */
+  }
+  .octocat{
+    margin: 100px 30px;
+  
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* For desktop screens */
+@media (min-width: 992px) {
+  .project-item {
+    width: 10%; /* Three items per row */
+  }
+  .App{
+    /* position:fixed; */
+    position:absolute;
+    /* position:inherit; */
+    top:0;
+    right:0;
+    /* width: 100%; */
+    left:0;
+    bottom:1000;
+  }
+  .about, .projects, .experience, .skills, .contact {
+    /* margin: 20px 0; */
+    max-width: 1980px; 
+  
+}
+.octocat{
+  margin: 20px 90px;
+
+  width: 200px;
+  height: 200px;
+}
+
+}
+
+/* For smaller screens (mobile) */
+@media (max-width: 767px) {
+  .header {
+    padding: 10px;
+  }
+  
+  .header h1{
+    
+    font-size: 2em;
+  }
+
+  .header p{
+    
+    font-size: 0.9em;
+  }
+
+  .header nav {
+    
+    font-size: 0.9em;
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    justify-content: center; /* Center items within the container */
+    /* flex-direction: column; Stack navigation links */
+  }
+
+
+  .header nav a {
+    margin: 5px 0;
+    width:30%;
+  }
+
+  section {
+    padding: 30px 10px;
+  }
+
+  .project-item {
+    width: 100%; /* Full width for mobile */
+    margin: 10px 0;
+  }
+
+  .skill-bar {
+    width: 100%; /* Full width for skill bars */
+  }
+
+  .contact input, .contact textarea {
+    width: 90%; /* Slight padding for input fields */
+  }
+  .octocat{
+    margin: 250px 20px;
+  
+    width: 100px;
+    height: 100px;
+  }
+
+}
+
